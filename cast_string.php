@@ -1,10 +1,10 @@
 <?php
 $var=5;
-$cast=(int) $var;
+$cast=(string) $var;
 var_dump($var,$cast);
 $var=5.5;
-$cast= (int)$var;
+$cast= (string)$var;
 var_dump($var,$cast);
 $var='4php';
-$cast=(int)$var;
+$cast=(string)$var;
 var_dump($var,$cast);
