@@ -17,6 +17,7 @@ removeLastLetter($stringToTest);
 appendLetters($stringToTest, 's');
 insertLetters($stringToTest,'my');
 removeFirstLetter($stringToTest);
+reverseText($stringToTest);
 /**
  * Dodanie do tekstu na końcu ciągu znaków.
  *
@@ -92,3 +93,20 @@ echo "After",__FUNCTION__,": ",$text,PHP_EOL;
 
 return $text;
 }
+
+/**
+ *Odwrócenie ciągu znaków.
+ *
+ *@param string $text Tekst, który zostanie odwrócony.
+ *
+ *$return Odwrócony tekst.
+*/
+
+function reverseText (string $text){
+    echo  "Before", __FUNCTION__,": ",$text,PHP_EOL;
+    $text=strrev($text);
+    echo "After",__FUNCTION__,": ",$text,PHP_EOL;
+
+return $text;
+    
+} 
