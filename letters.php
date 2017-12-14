@@ -18,6 +18,8 @@ appendLetters($stringToTest, 's');
 insertLetters($stringToTest,'my');
 removeFirstLetter($stringToTest);
 reverseText($stringToTest);
+textUpperCase($stringToTest);
+
 /**
  * Dodanie do tekstu na końcu ciągu znaków.
  *
@@ -41,15 +43,8 @@ function appendLetters(string $text, string $letters): string
  * @param string $text Tekst, z którego usuniemy ostatnią literę.
  *
  * @return string Tekst bez ostatniej litery.
-function insertLetters (string $text,string $letters)
-{
-echo  "Before", __FUNCTION__,": ",$string,PHP_EOL;
-$letters.=$text;
-$text=$letters;
-echo "After",__FUNCTION__,": ",$text,PHP_EOL;
-
-return $text;
  */
+
 function removeLastLetter(string $text): string
 {
     echo "Before ", __FUNCTION__, ": ", $text, PHP_EOL;
@@ -67,6 +62,7 @@ function removeLastLetter(string $text): string
  *
  *$return string Tekst z dodanymi literami.
 */
+
 function insertLetters (string $text,string $letters)
 {
 echo  "Before", __FUNCTION__,": ",$text,PHP_EOL;
@@ -99,7 +95,7 @@ return $text;
  *
  *@param string $text Tekst, który zostanie odwrócony.
  *
- *$return Odwrócony tekst.
+ *$return string  Odwrócony tekst.
 */
 
 function reverseText (string $text){
@@ -108,5 +104,21 @@ function reverseText (string $text){
     echo "After",__FUNCTION__,": ",$text,PHP_EOL;
 
 return $text;
+  }
+  
+/**
+ * Zamiana liter w tekście  na duże.
+ *
+ *@param string $text tekst w którym zostana zamienione litery na duże.
+ *
+ *$return string Zamieniony tekst.
+*/
+
+function textUpperCase (string $text){
+    echo  "Before", __FUNCTION__,": ",$text,PHP_EOL;
+    $text=strtoupper($text);
+    echo "After",__FUNCTION__,": ",$text,PHP_EOL;
+
+return $text;
     
-} 
+}  
