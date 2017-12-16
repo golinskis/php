@@ -2,11 +2,11 @@
 
 $allocatedMemory = memory_get_usage();
 
-echo $allocatedMemory;
 
 if($allocatedMemory<640){
-echo "640 KB wystarczy kazdemu";
+	echo "640 KB wystarczy kazdemu";
 }
-else{ 
-echo "Nie";
+	else{ 
+		echo "Nie".(($allocatedMemory/1024)/1024)." mb tyle potrzebujesz";
+
 }
