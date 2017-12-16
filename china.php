@@ -3,41 +3,41 @@
 $yearOfBirth=1990;
 $moduloOfBirth=$yearOfBirth%12;
 
-switch ($yearOfBirth){
-    case ($moduloOfBirth==0):
+switch ($moduloOfBirth){
+    case 0:
         echo "Małpa";
         break;
-    case ($moduloOfBirth==1):
+    case 1:
         echo "Koguta";
         break;
-    case ($moduloOfBirth==2):
+    case 2:
         echo "Psa";
         break;
-    case ($moduloOfBirth==3):
+    case 3:
         echo "Swinia";
         break;
-    case ($moduloOfBirth==4):
+    case 4:
         echo "Szczur";
         break;
-    case ($moduloOfBirth==5):
+    case 5:
         echo "Bawol";
         break;
-    case ($moduloOfBirth==6):
+    case 6:
         echo "Tygrys";
         break;
-    case ($moduloOfBirth==7):
+    case 7:
         echo "Krolik";
         break;
-    case ($moduloOfBirth==8):
+    case 8:
         echo "Smok";
         break;
-    case ($moduloOfBirth==9):
+    case 9:
         echo "Waz";
         break;
-    case ($moduloOfBirth==10):
+    case 10:
         echo "Kon";
         break;
-    case ($moduloOfBirth==11):
+    case 11:
         echo "Owca";
         break;
         
