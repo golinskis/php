@@ -1,5 +1,5 @@
 <?php
-$exArr=[
+$exArr1=[
     'klucz' => 'wartosc',
 ];
-var_dump($exarr1);
+var_export($exArr1);
