@@ -149,7 +149,7 @@ return $text;
  *
  *$return string Zamieniony tekst.
 */
-
+vim 
 function textUpperCase (string $text){
     echo  "Before", __FUNCTION__,": ",$text,PHP_EOL;
     $text=strtoupper($text);
@@ -160,7 +160,7 @@ return $text;
 }
 
  /**
- * Zamiana liter w tekście  na małe.
+ * Zamiana liter w tekście  na małe..
  *
  *@param string $text tekst w którym zostana zamienione litery na małe.
  *
@@ -184,16 +184,18 @@ return $text;
  *$return string Tekst z kropkami pomiedzy literami.
 */
 
-function dotsInjection (string $text){
+function dotsInjection (string $stringToTest){
  echo  "Before", __FUNCTION__,": ",$text,PHP_EOL;
-$nowyStr="";
-for($i=0;$i<strlen($text);$i++){
-$nowyStr .= $text[$i].".";
- 
-}
+for($i=0;$i<strlen($stringToTest);$i++){
+$nowyStr .= $stringToTest[$i].".";
 $text=$nowyStr;
+
+}
+
+echo "After",__FUNCTION__,": ",$text,PHP_EOL;
     return $text;
-echo "After",__FUNCTION__,": ",$text,PHP_EOL;}
+}
+
 
 
 
