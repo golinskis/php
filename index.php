@@ -1,10 +1,13 @@
 <?php
-
-declare(strict_types=1);
+error_reporting(E_ALL);
+ini_set('display_errors', true);
 
 require_once 'Customer.php';
-$customer = new Customer();
-$customer->setName('Marian');
-echo $customer->getDiscount();
-echo $customer->name;
-var_export($customer);
+require_once 'ChaoticCustomer.php';
+require_once 'GentleCustomer.php';
+require_once 'CustomerFactory.php';
+
+
+$janek = CustomerFactory::chooseCustomer(CustomerFactory::GENTLE);
+
+
