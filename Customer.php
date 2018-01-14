@@ -1,7 +1,12 @@
 <?php
 declare(strict_types=1);
+/**
+ *Status danego Kliento (moze byc basic lub premium)
+ *@var string
+ */
 class Customer
 {
+   public $status = 'basic';
    protected $name;
    public function getDiscount(): int 
    {
