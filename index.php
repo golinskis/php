@@ -1,13 +1,16 @@
 <?php
 declare(strict_types=1);
+require_once 'AreaInterface.php';
 require_once 'Rectangle.php';
-require_once  'Square.php';
+require_once 'Square.php';
+
 $kwadrat = new Rectangle();
 $kwadrat->setHeight(5);
 $kwadrat->setWidth(8);
-echo $kwadrat->getArea();
+echo $kwadrat->calcArea();
 
-$prostokat = new Square();
-$prostokat->setWidth(5);
-$prostokat->setHeight(5);
-echo $prostokat->getArea();
+$rectangle = new Square();
+$rectangle->setLength(5);
+echo $rectangle->calcArea();
+
+

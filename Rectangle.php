@@ -1,29 +1,30 @@
 <?php
 declare(strict_types=1);
 
-class Rectangle{
+class Rectangle implements AreaInterface {
 public $width;
 public $height;
 
 public function setHeight(int $height)
 {
-$this->height = $height;
+    $this->height = $height;
 }
 public function getHeight()
 {
-return $this->height;
+    return $this->height;
 
 }
-public function setWidth(int $width){
-$this->width = $width;
+public function setWidth(int $width) {
+    $this->width = $width;
 }
 public function getWidth(){
-return $this->width = $width;
+    return $this->width = $width;
 }
 
-public function getArea(){
+public function calcArea()
+    {
 
-return $this->height * $this->width;
+    return $this->height * $this->width;
 }
 
 }

@@ -1,21 +1,23 @@
 <?php
 declare(strict_types=1);
 
-class Square extends Rectangle
+class Square implements AreaInterface
 {
-public function setHeight(int $height){
+public function setLength(int $length) {
 
-$this->height = $height;
-$this->width =$height;
+$this->length = $length;
 }
 
-public function setWidth(int $width){
+public function getLength() {
 
-$this->width = $width;
-$this->height = $width;
+return $this->length = $length;
 
 }
 
+    public function calcArea() {
+
+    return $this->length * $this->length;
+}
 
 
 }
