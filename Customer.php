@@ -1,5 +1,6 @@
 <?php
 declare(strict_types=1);
+namespace golinskis;
 /**
  *Status danego Kliento (moze byc basic lub premium)
  *@var string
